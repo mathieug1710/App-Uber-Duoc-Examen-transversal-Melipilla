@@ -1,0 +1,8 @@
+{
+  "name": "ejemplo",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
