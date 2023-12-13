@@ -1,0 +1,49 @@
+<ion-content [fullscreen]="true">
+	<ion-back-button defaultHref="/adminmenu" class="back-button"></ion-back-button>
+	<div #map id="map"></div>
+	<ion-button expand="block" (click)="setOpen(true)">Crear viaje</ion-button>
+  </ion-content>
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="end">
+            <ion-button (click)="setOpen(false)">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+		<div class="flotante">
+			<ion-list *ngIf="autocompleteItems" [hidden]="autocompleteItems.length == 0">
+			  <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+				{{ item.description }}
+			  </ion-item>
+			</ion-list>
+			<div class="inputs">
+			  <div class="input">
+				<label for="">Destino</label>
+				<input type="text" [(ngModel)]="toAdd.destino" (input)="updateSearchResults()" placeholder="Destino">
+			  </div>
+			  <div class="input">
+				<label for="">Precio</label>
+				<input type="text" [(ngModel)]="toAdd.precio" placeholder="1000">
+			  </div>
+			  <div class="input">
+				<label for="">Capacidad</label>
+				<input type="text" [(ngModel)]="toAdd.capacidad" placeholder="4">
+			  </div>
+			  <div class="input">
+				<label for="">Hora salida</label>
+				<input type="text" [(ngModel)]="toAdd.hora" placeholder="22:30">
+			  </div>
+			  <div class="input">
+				<label for="">Fecha</label>
+				<input type="text" [(ngModel)]="toAdd.fecha" placeholder="10/10/2023">
+			  </div>
+			  <button (click)="crearViaje()">Agregar</button>
+			</div>
+		</div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  

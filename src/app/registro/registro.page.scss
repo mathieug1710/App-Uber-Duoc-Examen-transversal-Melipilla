@@ -1,0 +1,106 @@
+#fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #929191;
+    background-image: url('/assets/fondouber.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  
+  #logo img {
+    max-width: 150px; /* Ajusta este valor según tus preferencias */
+    height: auto;
+  }
+  
+  #color {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 320px;
+  }
+  
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'REM', sans-serif;
+  }
+  
+  #enlace {
+    margin-top: 10px;
+
+  }
+  
+  #enlace a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'REM', sans-serif;
+    font-size: 14px;
+  }
+  
+  #enlace a:hover {
+    text-decoration: underline;
+  }
+  
+  #boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .boton { 
+    --background: #eff31c;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+  
+  #login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Ajusta el espacio entre la checkbox y los demás campos */
+  }
+  
+  .checkbox-input {
+    margin-right: 10px;
+    appearance: none; /* Oculta los estilos predeterminados del sistema */
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    outline: none; /* Elimina el contorno predeterminado en el foco */
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .checkbox-input:checked {
+    background-color: #eff31c;
+    border-color: #eff31c;
+  }
+  
+  .checkbox-label {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'REM', sans-serif;
+    font-size: 16px;
+    color: white;
+  }

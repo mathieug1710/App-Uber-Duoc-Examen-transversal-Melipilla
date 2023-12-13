@@ -1,0 +1,29 @@
+<ion-content fullscreen>
+    <ion-back-button defaultHref="/adminmenu" class="back-button">Volver</ion-back-button>
+    <div id="contenido">
+      <ion-accordion-group>
+        <ion-accordion *ngFor="let viaje of viajes">
+          <ion-item slot="header" color="light">
+            <ion-label>
+              Viaje {{viaje.id}}
+            </ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <p>Fecha: {{viaje.fecha}}</p>  
+            <p>Hora: {{viaje.hora}}</p>
+            <p>Destino: {{viaje.destino}}</p>
+            <p>Precio: {{viaje.precio}}</p>
+            <p>Capacidad: {{viaje.capacidad}}</p>
+            <p>Pasajeros:</p>
+            <ul>
+              <li *ngFor="let nombre of viaje.nombres">
+                {{nombre}}
+              </li>
+            </ul>
+            <ion-button  color="danger" id="eliminarViajeButton" (click)="eliminarViaje(viaje.id)">Eliminar Viaje</ion-button>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </div>
+</ion-content>
+

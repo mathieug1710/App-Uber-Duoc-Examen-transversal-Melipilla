@@ -1,0 +1,59 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div class="menu-header">
+      <div class="imagen-perfil">
+        <img src="assets/driver.png" alt="">
+        <ion-label>
+          <h2>{{ usuario }}</h2>
+        </ion-label>
+      </div>
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-label>Mi perfil</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="call-outline" slot="start"></ion-icon>
+        <ion-label>Whatssap</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="map-outline" slot="start"></ion-icon>
+        <ion-label (click)="misviajes()">Mis Viajes</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-label (click)="cerrar()">Cerrar sesion</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div class="imagen-logo">
+      <h2>¿Donde vamos a viajar?</h2>
+      <img src="assets/fake.png" alt="">
+    </div>
+    <div class="container">
+      <div class="uber-car">
+        <img src="assets/UberX.png" alt="">
+        <button class="arrow-button" (click)="login()"><i class="fa fa-arrow-right"></i></button>
+      </div>
+      <div class="food">
+        <img src="assets/food.png" alt="">
+        <button class="arrow-button" (click)="viajes()"><i class="fa fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </ion-content>
+</div>

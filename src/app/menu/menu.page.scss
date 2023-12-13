@@ -1,0 +1,118 @@
+#map{
+  width: 100%;
+  height: 100vh;
+}
+
+.flotante {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  justify-content: center; /* Esto centrará los elementos verticalmente */
+  padding: 0px 7%;
+  width: 100vw;
+  height: 60vh; /* Puedes ajustar la altura según sea necesario */
+}
+
+.inputs>button{
+  background-color: #EF3686;
+  color: #fff;
+  border-radius: 5px;
+  height: 1.5rem;
+  width: 100%;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  input{
+    width: 100%;
+    outline: none;
+    border: 1px #d4d4d4 solid;
+    border-radius: 5px;
+  }
+}
+
+.back-button {
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  position: absolute;
+  top: 10px; /* Ajusta la posición superior según sea necesario */
+  left: 10px; /* Ajusta la posición izquierda según sea necesario */
+  z-index: 1; /* Asegura que esté por encima del mapa */
+}
+
+.block {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-button {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición vertical según sea necesario */
+  left: 50%; /* Ajusta la posición horizontal según sea necesario */
+  transform: translateX(-50%); /* Centra el botón horizontalmente */
+  z-index: 1000; /* Asegura que el botón esté por encima del mapa */
+}
+
+ion-button[cerrar] {
+  z-index: 1100; /* Asegura que el botón "Cerrar" esté por encima de otros elementos */
+}
+
+
+
+
+/* Estilo para el modal sheet */
+ion-modal {
+  --height: 80vh; /* Ajusta la altura según sea necesario */
+  --max-height: 80vh; /* Ajusta la altura máxima según sea necesario */
+  --min-height: 60vh; /* Ajusta la altura mínima según sea necesario */
+  --border-radius: 16px; /* Ajusta el radio de borde según sea necesario */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para el contenido del modal */
+ion-modal ion-content {
+  background: #fff; /* Ajusta el color de fondo según sea necesario */
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajusta la sombra según sea necesario */
+}
+
+/* Estilo para el encabezado del modal */
+ion-modal ion-header {
+  background: #007bff; /* Ajusta el color de fondo del encabezado según sea necesario */
+  color: #fff; /* Ajusta el color del texto del encabezado según sea necesario */
+  border-radius: 20px 20px 0 0; /* Ajusta el radio de borde según sea necesario */
+}
+
+/* Estilo para el botón de cerrar del encabezado */
+ion-modal ion-header ion-button {
+  color: #fff; /* Ajusta el color del texto según sea necesario */
+}
+
+/* Estilo para el contenido dentro del modal */
+ion-modal ion-content {
+  padding-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  background: #fff;
+}
+
+/* Estilo para el fondo oscuro detrás del modal */
+ion-modal::after {
+  background: rgba(0, 0, 0, 0.6); /* Ajusta el color de fondo según sea necesario */
+}
+
+
+
+

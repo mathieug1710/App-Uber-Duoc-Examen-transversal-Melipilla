@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=REM:ital,wght@1,200&display=swap" rel="stylesheet">
+  <div id="fondo">
+    <div id="logo">
+      <img src="assets/fake.png" alt="">
+    </div>
+    <div id="color">
+      <div id="login">
+        <input type="text" placeholder="Usuario" [(ngModel)]="usuario"> <!-- Utiliza ngModel para enlazar el input a una propiedad en tu componente -->
+        <input type="password" placeholder="Contraseña" [(ngModel)]="contrasena">
+        <input type="password" placeholder="Repetir Contraseña" [(ngModel)]="repetirContrasena">
+        <input type="tel" placeholder="Número de teléfono" [(ngModel)]="telefono">
+        <div class="checkbox-container">
+          <input type="checkbox" [(ngModel)]="esChofer" class="checkbox-input">
+          <label class="checkbox-label">¿Eres chofer?</label>
+        </div>
+      </div>
+      <div id="enlace">
+        <a [routerLink]="['/principal']">¿Tienes Cuenta?</a>
+      </div>
+      <div id="boton">
+        <ion-button class="boton" (click)="registrarUsuario()">Registrarse</ion-button> <!-- Llama a un método en tu componente cuando se hace clic en el botón -->
+      </div>
+    </div>
+  </div>
+</ion-content>

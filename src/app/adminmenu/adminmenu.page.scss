@@ -1,0 +1,138 @@
+.menu-header {
+    height: 180px;
+    width: 350px;
+    background: #000000;
+    background: linear-gradient(90deg, #555555 0%, #bebebe 100%);
+    box-shadow: 0px 1px 10px rgba(98, 140, 255, 0.5);
+    border-radius: 10px 10px 10px 30px;
+    margin-left: -18px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+    width: 250px;
+  }
+  
+  .imagen-perfil {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 15px;
+    align-items: center;
+  }
+  
+  .imagen-perfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid #020202;
+  }
+
+  .imagen-perfil h2 {
+    margin: 25px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #fffdfd; 
+  }
+  
+  ion-menu {
+    border-right: 1px solid #ccc; 
+  }
+  
+  .imagen-logo {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  
+  .imagen-logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .uber-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 130px;
+    border-image: url('/src/assets/UberX.png') 30 round;
+    height: 200px;
+    width: calc(50% - 10px); /* Ajusta el ancho para completar la mitad izquierda */
+    margin-right: 10px; /* Agrega un margen a la derecha para separar las imágenes */
+    margin-top: 20px; /* Ajusta el margen superior para bajar la imagen de Uber */
+  }
+  
+  .uber-car img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .uber-car .arrow-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  
+  .uber-car .arrow-button i {
+    margin-left: 5px;
+  }
+
+  /* Estilo para .uber-car (sin cambios) */
+
+/* Estilo para .food */
+.food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 130px;
+    border-image: url('/src/assets/food.png') 30 round;
+    height: 200px;
+    width: calc(50% - 10px); /* Ajusta el ancho para completar la mitad derecha */
+    margin-left: 10px; /* Agrega un margen a la izquierda para separar las imágenes */
+    margin-top: 20px; /* Ajusta el margen superior para bajar el botón de "food" */
+  }
+  
+  .food img {
+    max-width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto;
+    object-fit: cover;
+    margin-top: 3px;
+  }
+  
+  .food .arrow-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: 61px;
+  }
+  
+  .food .arrow-button i {
+    margin-left: 5px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos hacia arriba */
+  }
+  
+  .imagen-logo h2 {
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 19px;
+    font-weight: 700;
+  }
+  

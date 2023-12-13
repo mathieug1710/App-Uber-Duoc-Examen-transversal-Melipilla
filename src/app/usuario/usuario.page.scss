@@ -1,0 +1,54 @@
+// Colores
+$primary: #488aff;
+$secondary: #32db64;
+$light: #f4f5f8;
+
+// Fuentes
+$font-size: 14px;
+
+ion-card {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid #ddd; /* Agrega un borde de 1px sólido */
+  }
+  
+  ion-item {
+    --padding-start: 0;
+  
+    ion-avatar {
+      margin-right: 8px;
+    }
+  
+    h2 {
+      font-size: 18px;
+      color: #488aff; /* Reemplaza $primary con un valor de color concreto */
+    }
+  }
+  
+  h3 {
+    color: #32db64; /* Reemplaza $secondary con un valor de color concreto */
+    font-weight: 500;
+  }
+  
+  p {
+    color: #8c8c8c;
+    font-size: 14px; /* Reemplaza $font-size con un valor de tamaño de fuente concreto */
+  }
+  
+  ion-button {
+    --background: #32db64; /* Reemplaza $secondary con un valor de color concreto */
+  
+    &:hover {
+      --background: #2ec95c;
+    }
+  }
+  
+  ion-card-content {
+    padding: 10px;
+  
+    ion-row {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
